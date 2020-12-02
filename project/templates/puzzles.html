@@ -1,0 +1,228 @@
+{% extends "main.html" %} {%block title %}Puzzle Page{%endblock %} {%block content %}
+<div class="line">
+    <h2>Choose a Puzzle</h2>
+
+</div>
+
+<h4 class="puzzle-h4-text">Solve the Puzzle and discover the History </h4>
+<div class="card-holder">
+    <h3>Queens</h3>
+    <h3>Kings</h3>
+    <div class="small-card">
+        <div class="card-img-container">
+            <p class="q-k-name">Mary Queen of Scots</p>
+            <img src="{{ url_for('static', filename='images/mary-queen-of-scots.jpg')}}" alt=" Mary Queen of Scots ">
+        </div>
+        <button data-modal-target="#merry">Learn About Me</button>
+        <div class="modal" id="merry">
+            <div class="modal-header">
+                <div class="title">Mary Queen of Scots</div>
+                <button data-close-button class="close-button">&times;</button>
+            </div>
+            <div class="modal-body">
+
+                <img src="{{ url_for('static', filename='images/mary-queen-of-scots.jpg')}}" alt=" Mary Queen of Scots ">
+
+                <p class="modal-body-text"> Mary, Queen of Scots is perhaps the best known figure in Scotland’s royal history. Her life provided tragedy and romance, more dramatic than any legend.<br><br> She was born in 1542 a week before her father, King James V of Scotland, died
+                    prematurely.
+                    <br><br> It was initially arranged for Mary to marry the English King Henry VIII’s son Prince Edward; however the Scots refused to ratify the agreement. None too pleased by this, Henry sought to change their mind through a show of
+                    force, a war between Scotland and England… the so called ‘Rough Wooing’. In the middle of this, Mary was sent to France in 1548 to be the bride of the Dauphin, the young French prince, in order to secure a Catholic alliance against
+                    Protestant England. In 1561, after the Dauphin, still in his teens, died, Mary reluctantly returned to Scotland, a young and beautiful widow.<br><br>Scotland at this time was in the throes of the Reformation and a widening Protestant
+                    – Catholic split. A Protestant husband for Mary seemed the best chance for stability. Mary fell passionately in love with Henry, Lord Darnley, but it was not a success. Darnley was a weak man and soon became a drunkard as Mary ruled
+                    entirely alone and gave him no real authority in the country<br><br> Darnley became jealous of Mary’s secretary and favourite, David Riccio. He, together with others, murdered Riccio in front of Mary in Holyrood House. She was six
+                    months pregnant at the time.
+
+                    <br><br>Her son, the future King James VI of Scotland and I of England, was baptised in the Catholic faith in Stirling Castle. This caused alarm amongst the Protestants. <br><br> Lord Darnley, Mary’s husband, later died in mysterious
+                    circumstances in Edinburgh, when the house he was lodging in was blown up one night in February 1567. His body was found in the garden of the house after the explosion, but he had been strangled!
+                    <br><br> Mary had now become attracted to James Hepburn, Earl of Bothwell, and rumours abounded at Court that she was pregnant by him. Bothwell was accused of Darnley’s murder but was found not guilty. Shortly after he was acquitted,
+                    Mary and Bothwell were married. The Lords of Congregation did not approve of Mary’s liaison with Bothwell and she was imprisoned in Leven Castle where she gave birth to still-born twins.
+                    <br><br> Bothwell meanwhile had bid Mary goodbye and fled to Dunbar. She never saw him again. He died in Denmark, insane, in 1578.
+                    <br><br> In May 1568 Mary escaped from Leven Castle. She gathered together a small army but was defeated at Langside by the Protestant faction. Mary then fled to England.
+                    <br><br>In England she became a political pawn in the hands of Queen Elizabeth I and was imprisoned for 19 years in various castles in England. Mary was found to be plotting against Elizabeth; letters in code, from her to others, were
+                    found and she was deemed guilty of treason. <br><br> She was taken to Fotheringhay Castle and executed in 1587. It is said that after her execution, when the executioner raised the head for the crowd to see, it fell and he was left
+                    holding only Mary’s wig. Mary was intially buried at nearby Peterborough Cathedral.
+                    <br><br> Mary’s son became James I of England and VI of Scotland after Elizabeth’s death in 1603. Although James would have had no personal memories of his mother, in 1612 he had Mary’s body exhumed from Peterborough and reburied in
+                    a place of honour at Westminster Abbey. At the same time he rehoused Queen Elizabeth to a rather less prominent tomb nearby.
+                    <br><br>
+
+                </p>
+            </div>
+        </div>
+        <div id="overlay"></div>
+    </div>
+    <div class="small-card ">
+        <div class="card-img-container ">
+            <p class="q-k-name ">Malcolm II</p>
+            <img src="{{ url_for( 'static', filename='images/king-malcolm-II.jpg' )}}" alt="king malcolm II ">
+        </div>
+        <button data-modal-target="#Malcolm-II">Learn About Me</button>
+        <div class="modal" id="Malcolm-II">
+            <div class="modal-header">
+                <div class="title">Malcolm II</div>
+                <button data-close-button class="close-button">&times;</button>
+            </div>
+            <div class="modal-body">
+
+                <img src="{{ url_for( 'static', filename='images/king-malcolm-II.jpg' )}}" alt="king malcolm II ">
+
+                <p class="modal-body-text"> He acquired the throne by killing Kenneth III (Cinaed III) of a rival royal dynasty. Attempted to expand his kingdom southwards with a notable victory at the Battle of Carham, Northumbria in 1018. He was driven north again in 1027 by Cnut,
+                    the Danish king of England. Malcolm died on 25th November 1034, according to one account of the time he was “killed fighting bandits”. Leaving no sons he named his grandson Duncan I, as his successor.</p>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="small-card ">
+        <div class="card-img-container ">
+            <p class="q-k-name">Margaret Drummond</p>
+            <img src="{{ url_for( 'static', filename='images/margaret-drummond.jpg' )}}" alt="margaret drummond "> </div>
+        <button data-modal-target="#Margaret-Drummond">Learn About Me</button>
+        <div class="modal" id="Margaret-Drummond">
+            <div class="modal-header">
+                <div class="title">Margaret Drummond</div>
+                <button data-close-button class="close-button">&times;</button>
+            </div>
+            <div class="modal-body">
+                <img src="{{ url_for( 'static', filename='images/margaret-drummond.jpg' )}}" alt="margaret drummond "> </div>
+            <p class="modal-body-text"> The second wife and queen of David II made her mark after her husband tried to divorce her on the grounds of her infertility. Both widowers, they were married on February 20 1364 with the union elevating Clan Drummond to a heady status.
+                <br><br> But five years later, the marriage dream was broken with the King filing for divorce on the grounds that she was unable to bear him a child Margaret, however, had a son with her first husband while David’s first 37-year-old marriage
+                failed to produce any children.
+
+
+                <br><br> Lawless wrote: “Margaret wasn’t about to take the divorce lying down. She escaped the control of the king’s men and travelled, incognito, to Avignon in Southern France, where the current Pope was residing. <br><br> “Said Pope
+                agreed that there was no reason to consider she was infertile, and promptly reversed the divorce.”
+                <br><br> David was then unable to marry his new love given Margaret’s interventions with the Pope. He died suddenly in 1371, single and alone.
+
+
+            </p>
+        </div>
+    </div>
+    <div id="overlay"></div>
+
+    <div class="small-card ">
+        <div class="card-img-container ">
+            <p class="q-k-name ">Duncan I</p>
+            <img src="{{ url_for( 'static', filename='images/Duncan-I-of-Scotland.jpg' )}}" alt="king Duncan I ">
+        </div>
+        <button data-modal-target="#Duncan-I">Learn About Me</button>
+        <div class="modal" id="Duncan-I">
+            <div class="modal-header">
+                <div class="title">Duncan I</div>
+                <button data-close-button class="close-button">&times;</button>
+            </div>
+            <div class="modal-body">
+                <img src="{{ url_for( 'static', filename='images/Duncan-I-of-Scotland.jpg' )}}" alt="king Duncan I ">
+                <p class="modal-body-text"> Succeeded his grandfather Malcolm II as King of the Scots. Invaded northern England and besieged Durham in 1039, but was met with a disastrous defeat. Duncan was killed during, or after, a battle at Bothganowan, near Elgin, on 15th August,
+                    1040.
+                </p>
+            </div>
+        </div>
+        <div id="overlay"></div>
+    </div>
+    <div class="small-card ">
+        <div class="card-img-container ">
+            <p class="q-k-name ">Matilda</p>
+            <img src="{{ url_for( 'static', filename='images/Matilda_of_Scots.jpg' )}} " alt="Matilda_of_Scots ">
+        </div>
+        <button data-modal-target="#Matilda">Learn About Me</button>
+        <div class="modal" id="Matilda">
+            <div class="modal-header">
+                <div class="title">Matilda of Scots</div>
+                <button data-close-button class="close-button">&times;</button>
+            </div>
+            <div class="modal-body">
+
+                <img src="{{ url_for( 'static', filename='images/Matilda_of_Scots.jpg' )}} " alt="Matilda_of_Scots ">
+
+                <p class="modal-body-text"> Born Edith of Dunfermline, Matilda was the queen consort of Henry I of England and the daughter of Malcolm III, King of Scots and St Margaret.
+                    <br><br> The life of Matilda is little known and for seven years, she vanished from records altogether after walking out of the abbey where she was being raised
+                    <br><br> She disappeared following the death of her father, brother and mother, who all died within three days of each other, but the princes re-appeared in 1100 in great style, according to Lawless. <br><br>
+                    <br><br> Henry I found himself on the throne of England after the unexpected death of his brother, William II, and immediately proposed marriage to her. <br><br>
+                    <br><br> English chroniclers of the time claimed that Henry had ‘long been attached’ to Edith, and even that he ‘adored’ her. <br><br>
+                    <br><br> However, doubt surrounded whether Edith, who was educated in a convent, was actually a nun given sightings of her in a black habit. <br><br>
+
+                    <br><br> A council of bishops concluded Edith was free to marry Henry, and following the wedding she was rechristened Matilda, a far more fitting name for a Norman queen. However, the couple were mocked for their complete lack of interest
+                    in the Norman ways of fashion and partying. Instead, Matilda kept with her pious practices and founded leper hospitals, wore hair shirts and washed the feet of the poor. <br><br>
+
+                    <br><br> She died in her thirties and is remembered in the nursery rhyme London Bridge is Falling Down as the ‘fair lady’ given her love of architecture and her record of building bridges. <br><br>
+
+                </p>
+            </div>
+        </div>
+        <div id="overlay"></div>
+    </div>
+    <div class="small-card ">
+        <div class="card-img-container ">
+            <p class="q-k-name ">Macbeth</p>
+            <img src="{{ url_for( 'static', filename='images/Macbeth.jpg' )}} " alt="king Macbeth ">
+        </div>
+        <button data-modal-target="#Macbeth">Learn About Me</button>
+        <div class="modal" id="Macbeth">
+            <div class="modal-header">
+                <div class="title">Macbeth</div>
+                <button data-close-button class="close-button">&times;</button>
+            </div>
+            <div class="modal-body">
+
+                <img src="{{ url_for( 'static', filename='images/Macbeth.jpg' )}} " alt="king Macbeth ">
+
+                <p class="modal-body-text"> Acquired the throne after defeating Duncan I in battle following years of family feuding. He was the first Scottish king to make a pilgrimage to Rome. A generous patron of the church it is thought he was buried at Iona, the traditional
+                    resting place of the kings of the Scots.</p>
+            </div>
+        </div>
+        <div id="overlay"></div>
+    </div>
+    <div class="small-card ">
+        <div class="card-img-container ">
+            <p class="q-k-name ">Saint Margaret</p>
+            <img src="{{ url_for( 'static', filename='images/hrh_saint_margaret_of_scotland.jpg' )}} " alt="saint_margaret_of_scotland ">
+        </div>
+        <button data-modal-target="#Saint-Margaret">Learn About Me</button>
+        <div class="modal" id="Saint-Margaret">
+            <div class="modal-header">
+                <div class="title">Saint Margaret</div>
+                <button data-close-button class="close-button">&times;</button>
+            </div>
+            <div class="modal-body">
+                <img src="{{ url_for( 'static', filename='images/hrh_saint_margaret_of_scotland.jpg' )}} " alt="saint_margaret_of_scotland ">
+
+                <p class="modal-body-text"> Known posthumously as Saint Margaret of Scotland, this English princess was born in exile and became queen-consort of Scotland. Known for her piety and praised for her charitable works in life, she was canonised as a saint of the Roman
+                    Catholic Church in 1250.
+                    <br><br> Margaret was the grand-daughter of Edmund Ironside, the Anglo-Saxon King and her early childhood in Hungary was a simple and religious one. Her family returned to England following the death of Margaret’s uncle, the heirless
+                    Edward the Confessor.
+                    <br><br> Her father died not long after making the journey and her little brother, Edgar, was eventually declared the King of England. He was, however, promptly kidnapped by William the Conqueror and taken to Normandy.
+                    <br><br>Lawless said: “Margaret’s mother gathered up her two little daughters and fled. Margaret’s mother succeeded in getting passage on a ship back to the continent, but a storm drove them north where they were forced to disembark
+                    in Scotland and seek the protection of the King of Scots, <br><br> The spot where the royal ladies are said to have blown ashore is still known today as Saint Margaret’s Hope.
+                    <br><br> or widower King Malcolm III, this was an amazing turn of events. He was keen to marry one of the few remaining members of the illustrious AngloSaxon royal family and so took young Margaret as his wife.
+                    <br><br> They had six sons and two daughters. She is said to have calmed her husband’s “pagan temperaments” by introducing him to religion and ‘worked tirelessly” to bring the Scottish church in line with those on the Continent to
+                    the great benefit of the common people.
+                    <br><br> She served food to orphans and washed the feet of the poor every day. A cave on the banks of the Tower Burn in Dunfermline was used by her as a place of devotion and prayer.
+                    <br><br> Both Malcolm and their eldest son were killed in the Battle of Alnwick against the English in 1093 and, stricken with grief, she died just three days later
+                    <br><br> Lawless said: “Putting aside Margaret’s undoubtedly selfless and virtuous personality, she was simply a great agent for social change in eleventh century Scotland. For generations she was held up as the very pinnacle of queenship.
+                </p>
+            </div>
+        </div>
+        <div id="overlay"></div>
+    </div>
+    <div class="small-card ">
+        <div class="card-img-container ">
+            <p class="q-k-name ">Malcolm III</p>
+            <img src="{{ url_for( 'static', filename='images/malcolm_iii_skotijos_karalius_original.jpg' )}} " alt="malcolm iii ">
+        </div>
+        <button data-modal-target="#Malcolm-III">Learn About Me</button>
+        <div class="modal" id="Malcolm-III">
+            <div class="modal-header">
+                <div class="title">Malcolm III</div>
+                <button data-close-button class="close-button">&times;</button>
+            </div>
+            <div class="modal-body">
+                <img src="{{ url_for( 'static', filename='images/malcolm_iii_skotijos_karalius_original.jpg' )}} " alt="malcolm iii ">
+
+                <p class="modal-body-text"> (Mael Coluim III Cenn Mór). Succeeded to the throne after killing Macbeth and Macbeth’s stepson Lulach in an English-sponsored attack. William I (The Conqueror) invaded Scotland in 1072 and forced Malcolm to accept the Peace of Abernethy
+                    and become his vassal.</p>
+            </div>
+        </div>
+        <div id="overlay"></div>
+    </div>
+</div> {%endblock %}

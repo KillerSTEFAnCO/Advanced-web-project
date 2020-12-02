@@ -1,0 +1,27 @@
+{% extends "main.html" %} {%block title %}Home Page{%endblock %} {%block content %}
+<div class="home-banner">
+    <div class="home-banner-text">
+        <h1>You want Learn something interesting about the Kings and Queens of Scotland you are at the right place!</h1>
+        <a href="{{ url_for('puzzle') }}">Lets GO!</a>
+    </div>
+</div>
+<div class="line">
+    <h2>The Kings and Queens are Waiting for you!</h2>
+</div>
+<div class="card-holder">
+    <h3>Queens</h3>
+    <h3>Kings</h3>
+    <div class="small-card">
+        <div class="card-img-container">
+            <img src="{{ url_for('static', filename='images/mary-queen-of-scots.jpg') }}" alt="Mary Queen of Scots ">
+        </div>
+        <a href="{{ url_for( 'puzzle') }} ">Start with Queens</a>
+    </div>
+    <div class="small-card ">
+        <div class="card-img-container ">
+            <img src="{{ url_for( 'static', filename='images/king-of-scotland-index.jpg' ) }} " alt="image of a king ">
+        </div>
+        <a href="{{ url_for( 'puzzle') }} ">Start with Kings</a>
+    </div>
+</div>
+{%endblock %}

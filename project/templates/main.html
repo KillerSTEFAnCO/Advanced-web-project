@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{%block title %} {%endblock %}</title>
+    <link rel="shortcut icon" href="{{ url_for('static', filename='images/favicon.ico') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+</head>
+
+<body>
+
+    <div class="nav-wrap">
+        <div class="img-wrap">
+            <img src="{{ url_for('static', filename='images/img-for-logo/logo-white.png') }}" alt="Logo">
+
+        </div>
+        <nav>
+            <ul>
+                <a href="{{ url_for('home') }}">
+                    <li>Home <i class="fas fa-house-user"></i></li>
+                </a>
+                <a href="{{ url_for('puzzle') }}">
+                    <li>Puzzle <i class="fas fa-puzzle-piece"></i></li>
+                </a>
+                {%if session['name']%}
+                <a href="{{ url_for('logout') }}">
+                    <li>Logout <i class="fas fa-sign-out-alt"></i></li>
+                </a>
+                {%else%}
+                <a href="{{ url_for('login') }}">
+                    <li>Login <i class="fas fa-sign-in-alt"></i></li>
+                </a>
+                <a href="{{ url_for('createAcc') }}">
+                    <li>Register <i class="fas fa-user-plus"></i></li>
+                </a>
+                {%endif%}
+                <a href="{{ url_for('aboutus') }}">
+                    <li>About Us <i class="fas fa-users"></i></li>
+                </a>
+            </ul>
+        </nav>
+    </div>
+    <div class="body-wrap">
+        {%block content %} {%endblock %}
+    </div>
+
+    <footer>
+        <div class="footer-wrap">
+            <ul>
+                <a href="{{ url_for('home') }}">
+                    <li>Home</li>
+                </a>
+                <a href="{{ url_for('puzzle') }}">
+                    <li>Puzzle</li>
+                </a>
+                {%if session['name']%}
+                <a href="{{ url_for('logout') }}">
+                    <li>Logout</li>
+                </a>
+                {%else%}
+                <a href="{{ url_for('login') }}">
+                    <li>Login</li>
+                </a>
+                <a href="{{ url_for('createAcc') }}">
+                    <li>Register</li>
+                </a>
+                {%endif%}
+                <a href="{{ url_for('aboutus') }}">
+                    <li>About Us</li>
+                </a>
+            </ul>
+            </ul>
+            <div class="footer-text">
+                <p>The Best Way to Learn is by <br> Having Fun </p>
+                <img src="{{ url_for('static', filename='images/img-for-logo/logo-white.png') }}" alt="Kings & Queens Logo">
+            </div>
+        </div>
+    </footer>
+    <script src="{{ url_for('static', filename='js/main.js')}}"></script>
+</body>
+
+</html>
